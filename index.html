@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="w-screen h-screen overflow-hidden wrapper">
+      <div class="max-w-[100rem] shadow-lg rounded-lg bg-white/35 mx-auto flex items-stretch justify-center xl:mt-20 h-fit min-h-full xl:min-h-[500px] relative">
+        <div id="player-1" class="flex flex-[50%] flex-col justify-between items-center min-h-full py-4 md:py-5 lg:py-6 xl:py-10 gap-5 active transition-colors duration-700">
+          <div class="text-center text-3xl flex flex-col gap-2">
+            <h1 class="font-semibold">PLAYER 1</h1>
+            <h1 id="player-1-total-score" class="text-[#c7365f] text-5xl font-medium leading-tight">6</h1>
+          </div>
+          <div class="bg-[#c7365f] text-white py-3 px-5 rounded-lg w-fit text-center text-xl">
+            <h3 class="uppercase pb-1 md:pb-2 lg:pb-3 xl:pb-5">Current</h3>
+            <h3 id="player-1-current-score" class="text-2xl font-bold">20</h3>
+          </div>
+        </div>
+        <div id="player-2" class="flex flex-[50%] flex-col justify-between items-center min-h-full py-4 md:py-5 lg:py-6 xl:py-10 gap-5 transition-colors duratoin-700">
+          <div class="text-center text-3xl flex flex-col gap-2">
+            <h1 class="font-semibold">PLAYER 2</h1>
+            <h1 id="player-2-total-score" class="text-[#c7365f] text-5xl font-medium leading-tight">6</h1>
+          </div>
+          <div class="bg-[#c7365f] text-white py-3 px-5 rounded-lg w-fit text-center text-xl">
+            <h3 class="uppercase pb-1 md:pb-2 lg:pb-3 xl:pb-5">Current</h3>
+            <h3 id="player-2-current-score" class="text-2xl font-bold">20</h3>
+          </div>
+        </div>
+        <button id="newGameBtn" class="p-2 rounded-lg bg-white/40 uppercase text-white text-xl font-semibold absolute top-2">New Game</button>
+        <button id="rollDiceBtn" class="p-2 rounded-lg bg-white/40 uppercase text-white text-xl font-semibold absolute bottom-16">Roll Dice</button>
+        <button id="holdBtn" class="p-2 rounded-lg bg-white/40 uppercase text-white text-xl font-semibold absolute bottom-4">Hold</button>
+        <div class="w-20 h-20 bg-white absolute top-1/2 -translate-y-2/3 text-5xl ">
+          <img id="dice" src="./assets//dice/dice-1.png">
+        </div>
+      </div>
+    </div>
+
+    <script src="./out/script.js"></script>
+  </body>
+</html>
